@@ -4,14 +4,14 @@ import { useEffect, useState } from 'react';
 
 
 // Define the interface for user data
-let UserData = {
+/*let UserData = {
     id: null,
     first_name: null,
     last_name: null,
     username: null,
     language_code: null,
     is_premium: null,
-}
+}*/
 
 const Home = () => {
     const [userData, setUserData] = useState(null);
