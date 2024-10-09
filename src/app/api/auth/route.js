@@ -3,7 +3,10 @@ import { encrypt, SESSION_DURATION } from "../../../utils/session";
 import { validateTelegramWebAppData } from "../../../utils/telegramAuth";
 
 
-export async function handleTelegramAuth(initData) {
+export async function POST(request) {
+
+    const { initData } = await request.json();
+
     const validationResult = validateTelegramWebAppData(initData);
 
     if (validationResult.validatedData) {
